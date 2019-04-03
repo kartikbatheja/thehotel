@@ -5,7 +5,7 @@
 @include mat-core();
 
 $thehotel-primary: mat-palette($mat-teal, 200);
-$thehotel-accent:  mat-palette($mat-teal, 50);
+$thehotel-accent:  mat-palette($mat-teal, 60);
 
 $thehotel-warn:    mat-palette($mat-red);
 
@@ -26,4 +26,5 @@ $thehotel-theme: mat-light-theme($thehotel-primary, $thehotel-accent, $thehotel-
 .mat-nav-list .mat-list-item:focus {
     background-color: mat-color($thehotel-accent);
     color: mat-color($thehotel-accent, 900);
+
 }
