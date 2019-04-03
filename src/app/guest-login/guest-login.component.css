@@ -1,0 +1,8 @@
+.guest-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .guest-container > * {
+    width: 100%;
+  }

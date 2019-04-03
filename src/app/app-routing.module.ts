@@ -9,12 +9,17 @@ import { OffersComponent  } from './offers/offers.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
+import { GuestLoginComponent } from './guest-login/guest-login.component';
 
 
 const routes: Routes = [
     {
         path: '',
         component: HomeComponent
+    },
+    {
+        path: 'guest',
+        component: GuestLoginComponent
     },
     {
         path: 'accomodation',

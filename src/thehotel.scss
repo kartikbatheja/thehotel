@@ -1,5 +1,7 @@
 @import '~@angular/material/theming';
 
+@import './app/navigation/navtabs/navtabs.component-theme.scss';
+
 @include mat-core();
 
 $thehotel-primary: mat-palette($mat-teal, 200);
@@ -9,8 +11,19 @@ $thehotel-warn:    mat-palette($mat-red);
 
 $thehotel-theme: mat-light-theme($thehotel-primary, $thehotel-accent, $thehotel-warn);
 
+
+
 @include angular-material-theme($thehotel-theme);
 
-.navtabs-container {
+
+@include navtabs-component-theme($thehotel-theme);
+
+
+
+.mat-list-option:hover, 
+.mat-list-option:focus, 
+.mat-nav-list .mat-list-item:hover, 
+.mat-nav-list .mat-list-item:focus {
     background-color: mat-color($thehotel-accent);
+    color: mat-color($thehotel-accent, 900);
 }
